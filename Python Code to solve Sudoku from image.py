@@ -1,15 +1,11 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sun Jan 15 00:53:20 2023
-
-@author: suraj
-"""
 
 import cv2
 import pytesseract
 import numpy as np
 from PIL import Image
 
+
+# COmmented steps are for people with Tessaract, If not upload the matric directly as shown below
 # # Load the image
 # image = cv2.imread("Sudoku.jpg")
 
