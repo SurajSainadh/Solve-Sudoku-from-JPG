@@ -7,15 +7,15 @@ from PIL import Image
 
 # COmmented steps are for people with Tessaract, If not upload the matric directly as shown below
 # # Load the image
-# image = cv2.imread("Sudoku.jpg")
+# image = cv2.imread("Sudoku_Picture.jpg")
 
 # # Pre-process the image
-# gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-# gray = cv2.GaussianBlur(gray, (5, 5), 0)
-# gray = cv2.adaptiveThreshold(gray, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, 11, 2)
+# gray1 = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+# gray1 = cv2.GaussianBlur(gray1, (5, 5), 0)
+# gray1 = cv2.adaptiveThreshold(gray1, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, 11, 2)
 
 # # Run OCR on the image
-# text = pytesseract.image_to_string(gray, lang='eng', config='--psm 10')
+# text = pytesseract.image_to_string(gray1, lang='eng', config='--psm 10')
 
 # # Convert the text to a 9x9 matrix
 # matrix = [[int(c) if c.isdigit() else 0 for c in line] for line in text.split()]
